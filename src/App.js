@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Total from "./components/Total/Total";
+import Maths from "./components/Maths/Maths";
+import Chemistry from "./components/Chemistry/Chemistry";
+import Physics from "./components/Physics/Physics";
+import Navigation from "./components/Navigation/Navigation";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="fluid-container">
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Total />} />
+        <Route path="total" element={<Total />} />
+        <Route path="maths" element={<Maths />} />
+        <Route path="chemistry" element={<Chemistry />} />
+        <Route path="physics" element={<Physics />} />
+      </Routes>
     </div>
   );
 }

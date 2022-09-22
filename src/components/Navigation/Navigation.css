@@ -1,0 +1,19 @@
+.navigaton-section ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navigaton-section a {
+  text-decoration: none;
+  color: #3f51b5;
+  font-weight: 600;
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+}
+.navigaton-section i {
+  font-size: 20px;
+  padding-right: 10px;
+}
